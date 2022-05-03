@@ -12,8 +12,8 @@ int main()
         getcwd(path,255);
         cout<<path<<">";
         get_input(buf);
-        parse(buf);
         push_queue(&q,buf);
+        parse(buf);
         do_cmd(argc,argv);
     }
     return 0;
